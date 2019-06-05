@@ -41,7 +41,7 @@ def knapsack(capacity, profits, weights):
 
 
 def calculate(usb_size, memes):
-    """Function calculates the best set of memes to sell USB stick for the highest price.
+    """Function calculates the best set of memes to maximize profit.
 
     Args:
         usb_size (int): number describing the capacity of the USB stick in GiB.
@@ -49,7 +49,7 @@ def calculate(usb_size, memes):
         price in caps of a meme.
     Returns:
         tuple: (total value of all memes on the USB stick,
-                set of names of taken the memes).
+                set of names of taken memes).
     """
     capacity = 1024 * usb_size
     memes = list(set(memes))
